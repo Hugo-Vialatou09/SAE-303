@@ -1,5 +1,37 @@
 @import "tailwindcss";
 
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('/fonts/Helvetica.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('/fonts/Helvetica-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaCustom';
+  src: url('/fonts/Helvetica-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+body {
+  font-family: 'HelveticaCustom', Arial, sans-serif;
+}
+
+h1, h2, h3, .font-bold {
+  font-family: 'HelveticaCustom', Arial, sans-serif;
+  font-weight: bold;
+}
+
+
 
 @theme inline {
   --color-primary: var(--clr-primary-typo);
