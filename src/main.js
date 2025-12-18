@@ -283,6 +283,33 @@ gsap.from(".animate-postit", {
   ease: "back.out(2)" 
 });
 
+// --- SECTION_8 ---
+
+gsap.from("#text-budget", {
+  scrollTrigger: {
+    trigger: "#section-8",   
+    start: "top 60%",              
+    toggleActions: "play none none reverse" 
+  },
+  y: 150,          
+  scale: 0.8,       
+  opacity: 0,     
+  duration: 1.5,    
+  ease: "power4.out" 
+});
+
+gsap.from("#text-budget span", {
+  scrollTrigger: {
+    trigger: "#section-8",
+    start: "top 60%",
+  },
+  x: -100,      
+  opacity: 0,
+  duration: 1.2,
+  delay: 0.2,    
+  ease: "back.out(1.7)" 
+});
+
 // --- SECTION_FINALE  ---
 
 const tlFinal = gsap.timeline({
