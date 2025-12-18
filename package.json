@@ -1,0 +1,21 @@
+{
+  "name": "start-tailwind",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "vite": "^7.2.7"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.13",
+    "gsap": "^3.14.1",
+    "tailwindcss": "^4.1.13"
+  }
+}

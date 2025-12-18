@@ -1,0 +1,222 @@
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/src/style.css" rel="stylesheet" />
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js"
+      type="module"
+    ></script>
+  </head>
+  <body>
+
+    <section id="section-1" class="flex flex-col items-center justify-between h-screen w-screen py-20 px-10">
+      <div class="flex-1 flex items-center justify-center">
+        <h1 class="text-6xl max-w-4xl font-bold text-center">
+          COMMENT ADOPTER UNE ALIMENTATION PLUS DURABLE ?
+        </h1>
+      </div>
+      <div class="w-full flex justify-start">
+        <img class="w-64 h-64" src="./public/Pomme_coucou_ei.svg" alt="pomme">
+      </div>
+    </section>
+  
+    <section id="section-2" class="flex items-center justify-center h-screen w-screen gap-20 bg-background-orange px-10 md:px-40">
+      <img class="h-128 w-128 pt-15" id="graphe-1" src="./public/Graphe_viande.svg" alt="graphe-viande" />
+      <article id="block-stat-1" class="flex flex-col items-center">
+        <h2 id="stat-1" class="text-typography-1 text-8xl font-bold">61%</h2>
+        <p id="stat-1-bis" class="text-primary italic max-w-80 text-center text-2xl">
+          Des repas sont composés de viande
+        </p>
+        <p id="stat-2" class="text-primary max-w-180 pt-10 text-justify text-2xl">
+          Le fait que 61 % des repas soient composés de viande a un impact environnemental majeur...
+          Ce graphique représente l'évolution du poids de viande consommé dans les repas au cours d'une année pour un français au fil des années.
+        </p>
+      </article>
+    </section>
+  
+    <section id="section-3" class="bg-typography-2 flex flex-col items-center w-full min-h-screen py-16 px-4">
+      <article class="w-full max-w-6xl">
+        <h2 class="text-background-purple text-4xl md:text-5xl text-center max-w-4xl mx-auto leading-tight">
+          L’empreinte carbone de l’alimentation d’un français par an représente 
+          <span class="text-primary font-bold block md:inline-block mt-2 md:mt-0 text-1xl md:text-5xl"> 2.1 tonnes de CO2 </span>
+        </h2>
+        <div class="w-full max-w-4xl mx-auto mt-12 md:mt-20">
+          <ul class="space-y-6 pt-10">
+            <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <header class="w-full md:w-64 flex-shrink-0">
+                <span class="text-primary text-lg font-bold">Produits transformés</span>
+              </header>
+              <figure class="bg-primary flex-1 h-10 overflow-hidden rounded-lg relative">
+                <div class="bg-typography-4 h-full rounded-lg" style="width: 52.8%"></div>
+                <figcaption class="absolute top-1/2 right-3 -translate-y-1/2 text-sm font-black text-black">52,8%</figcaption>
+              </figure>
+            </li>
+            <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <header class="w-full md:w-64 flex-shrink-0">
+                <span class="text-primary text-lg font-bold">Produits agricoles</span>
+              </header>
+              <figure class="bg-primary flex-1 h-10 overflow-hidden rounded-lg relative">
+                <div class="bg-typography-4 h-full rounded-lg" style="width: 26.7%"></div>
+                <figcaption class="absolute top-1/2 right-3 -translate-y-1/2 text-sm font-black text-black">26,7%</figcaption>
+              </figure>
+            </li>
+            <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <header class="w-full md:w-64 flex-shrink-0">
+                <span class="text-primary text-lg font-bold">Restauration hors domicile</span>
+              </header>
+              <figure class="bg-primary flex-1 h-10 overflow-hidden rounded-lg relative">
+                <div class="bg-typography-4 h-full rounded-lg" style="width: 14.6%"></div>
+                <figcaption class="absolute top-1/2 right-3 -translate-y-1/2 text-sm font-black text-black">14,6%</figcaption>
+              </figure>
+            </li>
+            <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <header class="w-full md:w-64 flex-shrink-0">
+                <span class="text-primary text-lg font-bold">Cuisson gaz / électricité</span>
+              </header>
+              <figure class="bg-primary flex-1 h-10 overflow-hidden rounded-lg relative">
+                <div class="bg-typography-4 h-full rounded-lg" style="width: 4%"></div>
+                <figcaption class="absolute top-1/2 right-3 -translate-y-1/2 text-sm font-black text-black">4%</figcaption>
+              </figure>
+            </li>
+            <li class="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
+              <header class="w-full md:w-64 flex-shrink-0">
+                <span class="text-primary text-lg font-bold">Traitement des eaux</span>
+              </header>
+              <figure class="bg-primary flex-1 h-10 overflow-hidden rounded-lg relative">
+                <div class="bg-typography-4 h-full rounded-lg" style="width: 1.9%"></div>
+                <figcaption class="absolute top-1/2 right-3 -translate-y-1/2 text-sm font-black text-black">1,9%</figcaption>
+              </figure>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  
+    <section id="section-4" class="bg-background-blue flex flex-col items-center justify-center h-screen w-screen py-16 px-4">
+      <nav class="flex flex-row items-center justify-center gap-20 pt-8">
+        <div id="brocoli-container" class="grid grid-cols-1 grid-rows-1 h-32 w-32">
+          <img class="col-start-1 row-start-1 h-full w-full" src="./public/Brocoli.svg" alt="Brocoli" />
+          <img id="brocoli-mort" class="col-start-1 row-start-1 h-full w-full opacity-0" src="./public/Brocoli_mort.svg" alt="Brocoli" />
+        </div>
+        <div id="jambon-container" class="h-32 w-32">
+           <img class="h-full w-full" src="./public/Jambon.svg" alt="Jambon" />
+        </div>
+        <div id="banane-container" class="grid grid-cols-1 grid-rows-1 h-32 w-32">
+          <img class="col-start-1 row-start-1 h-full w-full" src="./public/Banane.svg" alt="Banane" />
+          <img id="banane-mort" class="col-start-1 row-start-1 h-full w-full opacity-0" src="./public/Banane_morte.svg" alt="Banane" />
+        </div>
+      </nav>
+      <article id="stat-3" class="flex flex-col items-center my-auto">
+        <span class="text-typography-4 text-9xl font-bold">1/3</span>
+        <h2 class="max-w-4xl px-8 text-center text-4xl">de la production mondiale est gaspillée</h2>
+      </article>
+    </section>
+  
+    <section id="section-5" class="bg-background-green h-screen w-full overflow-hidden">
+      <div class="grid grid-cols-3 items-center h-full px-10">
+        <div id="champignon-container" class="flex justify-start">
+          <div class="grid grid-cols-1 grid-rows-1 items-center justify-items-center w-64 h-64 md:w-96 md:h-96">
+            <img id="champignon-normal" src="./public/Champignon.svg" class="col-start-1 row-start-1 h-32 w-32 md:h-64 md:w-64" />
+            <img id="champignon-zombie" src="./public/Champignon_zombie.svg" class="col-start-1 row-start-1 h-32 w-32 md:h-64 md:w-64 opacity-0" />
+          </div>
+        </div>
+        <article id="stat-4" class="flex flex-col items-center text-center">
+          <span class="text-typography-5 text-7xl md:text-9xl font-bold">6%</span>
+          <h2 class="max-w-md text-2xl md:text-4xl font-medium">Des aliments subissent des transformations agroalimentaires</h2>
+        </article>
+      </div>
+    </section>
+  
+    <section id="section-6" class="flex flex-col items-center justify-center h-screen w-full gap-16 bg-background-purple px-6">
+      <header class="flex flex-col items-center gap-2">
+        <h2 class="text-primary text-4xl md:text-6xl text-center max-w-4xl font-medium">
+          L'alimentation représente 
+          <span class="text-typography-3 text-7xl md:text-9xl font-black block mt-2">1/4</span>
+          des émissions de CO₂ d'un français
+        </h2>
+      </header>
+    
+      <div class="grid grid-cols-2 md:flex md:flex-row justify-center gap-6 md:gap-10">
+        <div class="carbon-square w-32 h-32 md:w-44 md:h-44 bg-typography-3 rounded-3xl flex items-center justify-center shadow-2xl">
+          <span class="text-primary font-black text-2xl">CO2</span>
+        </div>
+        <div class="carbon-square w-32 h-32 md:w-44 md:h-44 bg-primary/10 border-4 border-primary/40 rounded-3xl"></div>
+        <div class="carbon-square w-32 h-32 md:w-44 md:h-44 bg-primary/10 border-4 border-primary/40 rounded-3xl"></div>
+        <div class="carbon-square w-32 h-32 md:w-44 md:h-44 bg-primary/10 border-4 border-primary/40 rounded-3xl"></div>
+      </div>
+    </section>
+  
+    <section id="section-7" class="grid grid-cols-1 md:grid-cols-[1.5fr_1fr] items-center h-screen w-full bg-background-neutral px-10 md:px-24 overflow-hidden">
+      <div class="flex flex-col items-center md:items-start gap-12">
+        <h2 class="text-black text-4xl md:text-6xl max-w-2xl font-medium">Le transport contribue pour <span class="animate-num text-typography-1 text-7xl md:text-9xl font-black block mt-2">19%</span>
+          aux émissions liées à l'alimentation
+        </h2>
+        <div class="w-full max-w-xl flex items-center justify-between">
+          <div class="w-16 h-16 bg-primary border-4 border-typography-1 rounded-full flex items-center justify-center text-xl">🚜</div>
+          <div class="flex-1 h-1 border-t-4 border-dashed border-typography-1/30 mx-4 relative">
+            <div class="animate-truck absolute -top-5 -scale-x-100 left-0 text-3xl">🚚</div>
+          </div>
+          <div class="w-16 h-16 bg-typography-1 rounded-full flex items-center justify-center text-xl text-primary">🍽️</div>
+        </div>
+      </div>
+      <aside class="hidden md:flex flex-col items-center justify-center relative h-[70vh] bg-[#D2B48C]/20 border-8 border-[#8B4513]/10 rounded-xl overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#000_0.5px,transparent_0.5px)] [background-size:10px_10px]"></div>
+        <div class="animate-postit flex flex-col items-center">
+           <div class="w-5 h-5 bg-typography-3 rounded-full shadow-md -mb-2 z-10"></div>
+           <div class="p-8 bg-typography-1 text-primary shadow-2xl rotate-2 w-64 aspect-square flex flex-col justify-center text-center">
+              <p class="font-black text-xl uppercase mb-2">Astuce Durable</p>
+              <p class="text-lg italic leading-tight">Privilégier le local réduit ces émissions de <span class="text-2xl font-bold">80%</span> !</p>
+           </div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="section-finale" class="h-screen w-full bg-background-purple flex items-center justify-center px-10 md:px-24 overflow-hidden">
+  
+      <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full max-w-7xl">
+        
+        <div class="flex flex-col items-center md:items-start gap-8">
+          <header class="text-center md:text-left">
+            <h2 class="text-primary text-5xl md:text-7xl font-black leading-tight uppercase tracking-tighter">
+              Ensemble, <br>
+              <span class="text-typography-3">mangeons</span> <br> 
+              durable !
+            </h2>
+          </header>
+    
+          <div class="bg-primary/10 border-4 border-primary/20 p-8 rounded-3xl backdrop-blur-sm max-w-lg">
+            <p class="text-primary text-lg md:text-xl leading-relaxed italic">
+              Chaque geste compte : privilégiez le <span class="text-typography-3 font-bold">local</span>, respectez les <span class="text-typography-3 font-bold">saisons</span> et stoppez le <span class="text-typography-3 font-bold">gaspillage</span>.
+            </p>
+          </div>
+    
+          <button class="bg-typography-3 text-primary font-bold py-4 px-10 rounded-full text-xl uppercase cursor-pointer shadow-2xl">
+            Agir maintenant
+          </button>
+        </div>
+    
+        <div class="flex justify-center relative">
+          <div class="absolute inset-0 bg-primary/5 rounded-full blur-3xl"></div>
+          
+          <img 
+            id="pomme-finale" 
+            class="relative z-10 w-64 h-64 md:w-96 md:h-96 drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]" 
+            src="./public/Pomme_coucou_ei.svg" 
+            alt="pomme finale"
+          >
+        </div>
+    
+      </div>
+    
+    </section>
+
+    </section>
+  
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+
+@theme inline {
+  --color-primary: var(--clr-primary-typo);
+
+  --color-background: var(--clr-bg);
+  --color-background-yellow: var(--clr-bg-y);
+  --color-background-purple: var(--clr-bg-p);
+  --color-background-red: var(--clr-bg-r);
+  --color-background-orange: var(--clr-bg-o);
+  --color-background-blue: var(--clr-bg-b);
+  --color-background-green: var(--clr-bg-g);
+  --color-background-brown: var(--clr-bg-br);
+
+  --color-progress-bar: var(--clr-progress-bar);
+
+  --color-typography-1: var(--clr-typo-1);
+  --color-typography-2: var(--clr-typo-2);
+  --color-typography-3: var(--clr-typo-3);
+  --color-typography-4: var(--clr-typo-4);
+  --color-typography-5: var(--clr-typo-5);
+}
+
+@layer base {
+  :root {
+    /* Primitive Tokens */
+    --clr-progress-bar: #c63080;
+    --clr-primary: #ffffff;
+    --clr-bg-white: #fbf8ec;
+    --clr-yellow: #fdf794;
+    --clr-purple: #dc95d8;
+    --clr-red: #e9777b;
+    --clr-orange: #eb8b2d;
+    --clr-blue: #88c4d9;
+    --clr-green: #a6ceb9;
+    --clr-brown: #edb37a;
+
+    --clr-light-Yellow: #eade02d4;
+    --clr-light-Purple: #812c7c;
+    --clr-light-Red: #d8232a;
+    --clr-light-Blue: #00a3da;
+    --clr-light-Green: #039c4c;
+
+    /* Tokens Sémantiques */
+
+    --clr-progress: var(--clr-progress-bar-pink);
+    --clr-primary-typo: var(--clr-primary);
+    --clr-bg: var(--clr-bg-white);
+    --clr-bg-y: var(--clr-yellow);
+    --clr-bg-p: var(--clr-purple);
+    --clr-bg-r: var(--clr-red);
+    --clr-bg-o: var(--clr-orange);
+    --clr-bg-b: var(--clr-blue);
+    --clr-bg-g: var(--clr-green);
+    --clr-bg-br: var(--clr-brown);
+
+    --clr-typo-1: var(--clr-light-Yellow);
+    --clr-typo-2: var(--clr-light-Purple);
+    --clr-typo-3: var(--clr-light-Red);
+    --clr-typo-4: var(--clr-light-Blue);
+    --clr-typo-5: var(--clr-light-Green);
+  }
+}
