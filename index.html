@@ -22,17 +22,27 @@
       </div>
     </section>
   
-    <section id="section-2" class="flex items-center justify-center h-screen w-screen gap-20 bg-background-orange px-10 md:px-40">
-      <img class="h-128 w-128 pt-15" id="graphe-1" src="./public/Graphe_viande.svg" alt="graphe-viande" />
-      <article id="block-stat-1" class="flex flex-col items-center">
-        <h2 id="stat-1" class="text-typography-1 text-8xl font-bold">61%</h2>
-        <p id="stat-1-bis" class="text-primary italic max-w-80 text-center text-2xl">
+    <section id="section-2" class="flex flex-col md:flex-row items-center justify-center min-h-screen w-full gap-10 md:gap-20 bg-background-orange px-6 py-20 md:px-40">
+  
+      <div class="w-full md:w-1/2 flex justify-center">
+        <img class="w-full max-w-[300px] md:max-w-none h-auto md:h-128 md:w-128" id="graphe-1" src="./public/Graphe_viande.svg" alt="graphe-viande" />
+      </div>
+    
+      <article id="block-stat-1" class="flex flex-col items-center md:items-start w-full md:w-1/2">
+        
+        <h2 id="stat-1" class="text-typography-1 text-6xl md:text-8xl font-bold">
+          61%
+        </h2>
+        
+        <p id="stat-1-bis" class="text-primary italic max-w-80 text-center md:text-left text-xl md:text-2xl font-medium">
           Des repas sont composés de viande
         </p>
-        <p id="stat-2" class="text-primary max-w-180 pt-10 text-justify text-2xl">
+    
+        <p id="stat-2" class="text-primary max-w-xl pt-6 md:pt-10 text-center md:text-justify text-lg md:text-2xl leading-relaxed">
           Le fait que 61 % des repas soient composés de viande a un impact environnemental majeur...
           Ce graphique représente l'évolution du poids de viande consommé dans les repas au cours d'une année pour un français au fil des années.
         </p>
+    
       </article>
     </section>
   
@@ -94,24 +104,35 @@
       </article>
     </section>
   
-    <section id="section-4" class="bg-background-blue flex flex-col items-center justify-center h-screen w-screen py-16 px-4">
-      <nav class="flex flex-row items-center justify-center gap-20 pt-8">
-        <div id="brocoli-container" class="grid grid-cols-1 grid-rows-1 h-32 w-32">
-          <img class="col-start-1 row-start-1 h-full w-full" src="./public/Brocoli.svg" alt="Brocoli" />
-          <img id="brocoli-mort" class="col-start-1 row-start-1 h-full w-full opacity-0" src="./public/Brocoli_mort.svg" alt="Brocoli" />
+    <section id="section-4" class="bg-background-blue flex flex-col items-center justify-center min-h-screen w-full py-12 md:py-16 px-4 overflow-hidden">
+  
+      <nav class="flex flex-row items-center justify-center gap-6 md:gap-20 pt-8 mb-12">
+        
+        <div id="brocoli-container" class="grid grid-cols-1 grid-rows-1 h-20 w-20 md:h-32 md:w-32 flex-shrink-0">
+          <img class="col-start-1 row-start-1 h-full w-full object-contain" src="./public/Brocoli.svg" alt="Brocoli" />
+          <img id="brocoli-mort" class="col-start-1 row-start-1 h-full w-full object-contain opacity-0" src="./public/Brocoli_mort.svg" alt="Brocoli" />
         </div>
-        <div id="jambon-container" class="h-32 w-32">
-           <img class="h-full w-full" src="./public/Jambon.svg" alt="Jambon" />
+    
+        <div id="jambon-container" class="h-20 w-20 md:h-32 md:w-32 flex-shrink-0">
+           <img class="h-full w-full object-contain" src="./public/Jambon.svg" alt="Jambon" />
         </div>
-        <div id="banane-container" class="grid grid-cols-1 grid-rows-1 h-32 w-32">
-          <img class="col-start-1 row-start-1 h-full w-full" src="./public/Banane.svg" alt="Banane" />
-          <img id="banane-mort" class="col-start-1 row-start-1 h-full w-full opacity-0" src="./public/Banane_morte.svg" alt="Banane" />
+    
+        <div id="banane-container" class="grid grid-cols-1 grid-rows-1 h-20 w-20 md:h-32 md:w-32 flex-shrink-0">
+          <img class="col-start-1 row-start-1 h-full w-full object-contain" src="./public/Banane.svg" alt="Banane" />
+          <img id="banane-mort" class="col-start-1 row-start-1 h-full w-full object-contain opacity-0" src="./public/Banane_morte.svg" alt="Banane" />
         </div>
+        
       </nav>
-      <article id="stat-3" class="flex flex-col items-center my-auto">
-        <span class="text-typography-4 text-9xl font-bold">1/3</span>
-        <h2 class="max-w-4xl px-8 text-center text-4xl">de la production mondiale est gaspillée</h2>
+    
+      <article id="stat-3" class="flex flex-col items-center my-auto w-full">
+        <span class="text-typography-4 text-7xl md:text-9xl font-black tracking-tighter">
+          1/3
+        </span>
+        <h2 class="max-w-2xl px-4 mt-4 text-center text-2xl md:text-5xl font-medium leading-tight">
+          de la production mondiale est <span class="text-typography-4">gaspillée</span>
+        </h2>
       </article>
+    
     </section>
   
     <section id="section-5" class="bg-background-green h-screen w-full overflow-hidden">
